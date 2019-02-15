@@ -17,6 +17,6 @@ function mostrar()
 
 	total=(primerpeso+segundopeso);
 
-	alert("Tenes dos mascotas "+primernombre+" y "+segundonombre+", que pesan "+primerpeso+" y "+segundopeso+" kilos, la suma de los kilos es "+total);
+	alert("Tenes dos mascotas "+primernombre+" y "+segundonombre+", que pesan "+primerpeso+" y "+segundopeso+" kilos, la suma de los kilos es "+total+".");
 
 }

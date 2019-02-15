@@ -6,7 +6,7 @@ function mostrar()
   	var masiva;
 
   	dinero=elNombre.value;
-  	descuento=(dinero*0.90);
+  	descuento=(dinero*10/100);
   	iva=(dinero*21/100);
 
   	descuento=parseInt(descuento);
@@ -14,6 +14,6 @@ function mostrar()
 
   	masiva=(descuento+iva);
 
-  	alert("Tu compra es de $"+dinero+", tenes un descuento del 10%, queda en "+descuento+" mas el IVA es $"+masiva);
+  	alert("Tu compra es de $"+dinero+", tenes un descuento del 10%, queda en "+descuento+" mas el IVA es $"+masiva+".");
 
 }
