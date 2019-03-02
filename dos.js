@@ -1,11 +1,19 @@
 function mostrar()
 {
-	var nombre;
-	var zona;
+  	var dinero;
+  	var descuento;
+  	var iva;
+  	var masiva;
 
-	nombre=elNombre.value;
-	zona=laLocalidad.value;
+  	dinero=elNombre.value;
+  	descuento=(dinero*10/100);
+  	iva=(dinero*21/100);
 
-	alert("Usted es "+nombre+" y vive en la localidad de "+zona);
+  	descuento=parseInt(descuento);
+  	iva=parseInt(iva);
+
+  	masiva=(descuento+iva);
+
+  	alert("Tu compra es de $"+dinero+", tenes un descuento del 10%, queda en "+descuento+" mas el IVA es $"+masiva+".");
 
 }
