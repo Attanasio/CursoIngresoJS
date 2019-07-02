@@ -3,18 +3,18 @@ transformarlos a enteros (parseInt) y Sumarlos.
 mostrar el resulto por medio de "ALERT"*/
 function sumar()
 {
-	var primernumero;
-	var segundonumero;
-	var suma;
+    var numeroUno;
+    var numeroDos;
+    var suma;
 
-	primernumero = numeroUno.value;
-	segundonumero = numeroDos.value;
+    numeroUno=document.getElementById("numeroUno").value;
+    numeroDos=document.getElementById("numeroDos").value;
 
-	primernumero = parseInt(primernumero);
-	segundonumero = parseInt(segundonumero);
+    numeroUno=parseInt;
+    numeroDos=parseInt;
 
-	suma = (primernumero+segundonumero);
+    suma=(numeroUno+numeroDos);
 
-	alert("La suma total es "+suma);
+    alert("La suma es "+suma);
 }
 
