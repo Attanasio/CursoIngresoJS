@@ -10,5 +10,74 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
- 	
+    var cantidadLamparas;
+    var marcaLamparas;
+    var descuento;
+    var aumento;
+    var precio;
+    var total;
+
+    cantidadLamparas=document.getElementById("Cantidad").value;
+    marcaLamparas=document.getElementById("Marca").value;
+
+    precio=(cantidadLamparas*35);
+
+    cantidadLamparas=parseInt(cantidadLamparas);
+    descuento=parseInt(descuento);
+    total=parseInt(total);
+    precio=parseInt(precio);
+    aumento=parseInt(aumento);
+
+    precio=parseInt(precio);
+
+    if(cantidadLamparas>5)
+    {
+         descuento=(precio*50/100);
+         total=(precio-descuento);
+    }
+        else if(cantidadLamparas==5 && marcaLamparas=="ArgentinaLuz")
+        {
+            descuento=(precio*40/100);
+            total=(precio-descuento);
+        }
+            else if(cantidadLamparas==5 && marcaLamparas!="ArgentinaLuz")
+            {
+                descuento=(precio*40/100);
+                total=(precio-descuento);
+            }
+                else if(cantidadLamparas==4 && marcaLamparas=="ArgentinaLuz" || marcaLamparas=="FelipeLamparas")
+                {
+                    descuento=(precio*25/100);
+                    total=(precio-descuento); 
+                }
+                    else if(cantidadLamparas==4 && marcaLamparas!="ArgentinaLuz" || marcaLamparas!="FelipeLamparas")
+                    {
+                        descuento=(precio*20/100);
+                        total=(precio-descuento); 
+                    }
+                        else if(cantidadLamparas==3 && marcaLamparas=="ArgentinaLuz")
+                        {
+                            descuento=(precio*15/100);
+                            total=(precio-descuento); 
+                        }
+                            else if(cantidadLamparas==3 && marcaLamparas=="FelipeLamparas")
+                            {
+                                descuento=(precio*10/100);
+                                total=(precio-descuento);
+                            }
+                                else if(cantidadLamparas==3)
+                                {
+                                    descuento=(precio*5/100);
+                                    total=(precio-descuento);
+                                }
+    
+    if(total>120)
+    {
+        aumento=(total*10/100);
+        total=(total+aumento);
+        
+        alert("Se le sumo un extra de "+aumento+" por superar la suma de $120.");
+    }
+
+    document.getElementById("precioDescuento").value=("$"+total);
 }
