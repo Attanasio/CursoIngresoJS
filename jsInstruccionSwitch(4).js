@@ -1,28 +1,22 @@
 function mostrar()
 {
-
-var mesDelAño
-mesDelAño=mes.value;
-
-switch(mesDelAño)
-{
-    case "Febrero":
-        alert("Este mes tiene 28 dias salvo en los años bisiestos que tiene 29 días.");
+    var mes;
+    
+    mes=document.getElementById("mes").value;
+    
+    switch(mes)
+    {
+        case "Febrero":
+        alert("Tiene 28 dias");
         break;
-    case "Abril":
-    case "Junio":
-    case "Septiembre":
-    case "Noviembre":
-        alert("ESte mes tiene 30 dias.");
+        case "Abril": 
+        case "Junio":
+        case "Septiembre":
+        case "Noviembre":
+        alert("Tiene 30 dias");
         break;
-    default:
-        alert("Este mes tiene 31 dias.");
+        default:
+        alert("Tiene 31 dias");
+        break;
+    }
 }
-
-
-	
-	
-
-
-
-}//FIN DE LA FUNCIÓN
